@@ -6,3 +6,4 @@ chromadb
 pypdf
 google-generativeai
 python-dotenv
+sentence-transformers
