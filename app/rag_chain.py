@@ -12,7 +12,7 @@ load_dotenv(BASE_DIR / ".env")
 DB_DIR = BASE_DIR / "chroma_db"
 EMBEDDING_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 LLM_MODEL = "openai/gpt-oss-120b"
-TOP_K = 4
+TOP_K = 6
 
 PROMPT = ChatPromptTemplate.from_messages([
     ("system",

@@ -10,12 +10,24 @@ DATA_DIR = BASE_DIR / "data"
 DB_DIR = BASE_DIR / "chroma_db"
 EMBEDDING_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 
+HEADER_PREFIXES = ("TED ÜN", "Doküman No", "KYS-YN-01", "TASN")
+
+
+def clean_page(text: str) -> str:
+    # her sayfada tekrar eden üstbilgi satırlarını at
+    lines = [
+        line for line in text.splitlines()
+        if not line.strip().startswith(HEADER_PREFIXES)
+    ]
+    return "\n".join(lines).strip()
 
 def process_pdf(file_name: str):
     file_path = DATA_DIR / file_name
     print(f"Dosya okunuyor: {file_path}")
     docs = PyPDFLoader(str(file_path)).load()
     print(f"Toplam sayfa sayısı: {len(docs)}")
+    for d in docs:
+        d.page_content = clean_page(d.page_content)
 
     splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
     chunks = splitter.split_documents(docs)
