@@ -45,3 +45,18 @@ Her küçük commit'i buraya yazmak gerekmez. Milestone seviyesindeki anlamlı d
 ### Notes
 - Test seti küçük ve tek belgeyle sınırlı, düzeltmeler aynı sorularla yapıldı (bkz. README Limitations)
 - Proje, MVP seviyesinde çalışan RAG asistanı durumunda
+
+---
+
+## [2026-10-04] - Final MVP baseline
+### Added
+- `.env.example` eklendi, README'deki ortam kurulumu buna göre güncellendi
+- Repo temiz bir klasöre klonlanıp sıfırdan kurulum ve çalıştırma testi yapıldı, `requirements.txt` eksiksiz çıktı
+- Değerlendirme sonuçları yönerge metniyle karşılaştırılarak işaretlendi (13 sorunun hepsi doğru)
+
+### Changed
+- `search_test.py` hata ayıklama scripti `tests/` klasörüne taşındı, README klasör yapısı güncellendi
+
+### Notes
+- Proje, L3 seviyesinde çalışan bir MVP durumuna getirildi
+- Bilinen eksikler README Limitations bölümünde: tek belge, küçük test seti, madde bazlı chunking yapılmadı

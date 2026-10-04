@@ -3,8 +3,8 @@
 Bu dosya, proje sürecini yönetmek için kullanılır. Görevler düzenli olarak güncellenir.
 
 ## Project status
-- **Current phase:** Testing
-- **Current focus:** Proje belgelerinin (PROJECT_CONTEXT, DECISIONS, TASKS) tamamlanması
+- **Current phase:** Finalization
+- **Current focus:** Final demo ve anlatım hazırlığı
 - **Last updated:** 2026-10-04
 
 ---
@@ -16,13 +16,13 @@ Bu dosya, proje sürecini yönetmek için kullanılır. Görevler düzenli olara
 - [ ] İkinci bir belge ekleme (opsiyonel)
 
 ## In Progress
-- [ ] PROJECT_CONTEXT.md, DECISIONS.md ve TASKS.md içeriklerinin tamamlanması
-- [ ] README.md'nin doldurulması
+- [ ] Final demo ve 3-5 dakikalık anlatım hazırlığı
 
 ## Blocked
 - Şu an bloke olan görev yok.
 
 ## Done
+- [x] Proje önerisi hocaya iletildi ve onaylandı
 - [x] Repository ve `student/efe-iskender` branch'i oluşturuldu
 - [x] Sanal ortam ve requirements.txt hazırlandı
 - [x] Veri kaynağı olarak TED Üniversitesi İzin Yönergesi seçildi
@@ -30,8 +30,12 @@ Bu dosya, proje sürecini yönetmek için kullanılır. Görevler düzenli olara
 - [x] Embedding modeli Türkçe destekli modelle değiştirildi
 - [x] LLM Gemini yerine Groq olarak değiştirildi
 - [x] RAG zinciri yazıldı (`app/rag_chain.py`)
-- [x] 13 soruluk değerlendirme seti hazırlandı ve çalıştırıldı (`tests/eval_questions.py`)
+- [x] 13 soruluk değerlendirme seti hazırlandı, çalıştırıldı ve sonuçlar yönerge metniyle karşılaştırılarak işaretlendi
 - [x] Retrieval hatası teşhis edilip düzeltildi (üstbilgi temizliği, top-k artırımı)
+- [x] PROJECT_CONTEXT, DECISIONS, TASKS, README ve CHANGELOG dosyaları tamamlandı
+- [x] `.env.example` eklendi
+- [x] Repo temiz bir klasöre klonlanıp sıfırdan kurulum ve çalıştırma testi yapıldı
+- [x] Yardımcı test scripti `tests/` altına taşındı
 
 ---
 
@@ -65,15 +69,15 @@ Bu dosya, proje sürecini yönetmek için kullanılır. Görevler düzenli olara
 - [x] Örnek query seti hazırla
 - [x] Basit evaluation yap
 - [x] Retrieval hatalarını not et
-- [ ] Prompt iyileştirmesi yap
-- [ ] Edge case kontrolü yap
+- [ ] Prompt iyileştirmesi yap (backlog'da)
+- [x] Edge case kontrolü yap (belgede olmayan ve kapsam dışı sorularla)
 
 ## Phase 6 — Finalization
-- [ ] README tamamla
-- [ ] CHANGELOG güncelle
-- [ ] Örnek output ekle
+- [x] README tamamla
+- [x] CHANGELOG güncelle
+- [x] Örnek output ekle
 - [ ] Final demo hazırlığı yap
-- [ ] Repository cleanup yap
+- [x] Repository cleanup yap
 
 ---
 
@@ -94,6 +98,6 @@ Bu dosya, proje sürecini yönetmek için kullanılır. Görevler düzenli olara
 - [x] İlk demo alınabiliyor
 
 ### Milestone 4
-- [ ] README taslağı tamamlandı
-- [ ] Sonuçlar iyileştirildi
+- [x] README taslağı tamamlandı
+- [x] Sonuçlar iyileştirildi
 - [ ] Final sunuma hazır hale gelindi
