@@ -5,7 +5,7 @@ Bu dosya, proje sürecini yönetmek için kullanılır. Görevler düzenli olara
 ## Project status
 - **Current phase:** Testing
 - **Current focus:** Proje belgelerinin (PROJECT_CONTEXT, DECISIONS, TASKS) tamamlanması
-- **Last updated:** 2026-10-03
+- **Last updated:** 2026-10-04
 
 ---
 
@@ -79,7 +79,7 @@ Bu dosya, proje sürecini yönetmek için kullanılır. Görevler düzenli olara
 
 ## Milestones
 ### Milestone 1
-- [ ] Proje fikri onaylandı
+- [x] Proje fikri onaylandı
 - [x] Repository açıldı
 - [x] Student branch oluşturuldu
 
