@@ -88,7 +88,7 @@ pip install -r requirements.txt
 ```
 
 ### Environment Variables
-Proje klasörünün kökünde `.env` dosyası oluşturup Groq anahtarını yazın. Bu dosya `.gitignore` içindedir, GitHub'a gitmez.
+Proje klasörünün kökündeki `.env.example` dosyasını `.env` adıyla kopyalayıp Groq anahtarını yazın. `.env` dosyası `.gitignore` içindedir, GitHub'a gitmez.
 
 ```env
 GROQ_API_KEY=buraya_kendi_anahtarinizi_yazin
